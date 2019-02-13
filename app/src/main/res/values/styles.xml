@@ -1,23 +1,30 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorAccent">@color/colorPrimary</item>
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+
+        <item name="android:textViewStyle">@style/MyDefaultText</item>
+        <item name="buttonStyle">@style/MyButton</item>
     </style>
 
-    <style name="FullscreenTheme" parent="AppTheme">
-        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
-        <item name="android:windowActionBarOverlay">true</item>
-        <item name="android:windowBackground">@null</item>
-        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
-        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    <style name="MyDefaultText" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textSize">22sp</item>
     </style>
 
-    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
-        <item name="android:background">@color/black_overlay</item>
+    <style name="MyTitleText" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:textSize">50sp</item>
+    </style>
+
+
+    <style name="MyButton" parent="Base.Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:textSize">18sp</item>
     </style>
 
 </resources>

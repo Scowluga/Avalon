@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">Avalon</string>
 
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string-array name="vote_array">
+        <item>Select Vote</item>
+        <item>> Pass</item>
+        <item>> Fail</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
