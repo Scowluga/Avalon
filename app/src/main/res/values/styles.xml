@@ -19,7 +19,7 @@
     </style>
 
     <style name="MyTitleText" parent="TextAppearance.AppCompat.Headline">
-        <item name="android:textSize">50sp</item>
+        <item name="android:textSize">60sp</item>
     </style>
 
 

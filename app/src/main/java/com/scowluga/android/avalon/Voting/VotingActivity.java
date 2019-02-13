@@ -26,7 +26,7 @@ public class VotingActivity extends AppCompatActivity implements
 
         numVotes = 3;
         passCount = 0;
-        failCount = 0; 
+        failCount = 0;
 
         // Initial Start Fragment
         StartFragment fragment = new StartFragment();
