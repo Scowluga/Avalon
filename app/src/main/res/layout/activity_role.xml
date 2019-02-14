@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.scowluga.android.avalon.Distribute.RoleActivity">
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/role_flip"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:flipOnTouch="true"
+        app:flipEnabled="true"
+        app:flipDuration="400"
+        app:flipType="vertical"
+        app:flipFrom="front"
+        app:autoFlipBack="true"
+        app:autoFlipBackTime="1000"
+        android:layout_centerInParent="true"
+        >
+
+        <!-- Back Layout Goes Here -->
+        <include layout="@layout/role_show"/>
+
+        <!-- Front Layout Goes Here -->
+        <include layout="@layout/role_wait"/>
+
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+</RelativeLayout>

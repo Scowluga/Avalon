@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.scowluga.android.avalon.Distribute.DistributeActivity;
 import com.scowluga.android.avalon.Voting.VotingActivity;
 
 public class HomeActivity extends AppCompatActivity {
@@ -15,7 +16,16 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        Button votingBtn = (Button)findViewById(R.id.home_voteBtn);
+        Button distributeBtn = findViewById(R.id.home_distributeBtn);
+        distributeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, DistributeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button votingBtn = findViewById(R.id.home_voteBtn);
         votingBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

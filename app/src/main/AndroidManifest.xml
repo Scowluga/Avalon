@@ -16,9 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Voting.VotingActivity">
-
-        </activity>
+        <activity android:name=".Voting.VotingActivity" />
+        <activity android:name=".Distribute.DistributeActivity" />
+        <activity android:name=".Distribute.RoleActivity"></activity>
     </application>
 
 </manifest>
